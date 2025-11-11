@@ -3,13 +3,13 @@ Project Based Learing 1
 # LANGKAH 1 BUAT STRUKTUR DIREKTORI
 # Berikut contoh membuat direktori project_1
 #(Deskripsi gambar)
-# https://drive.google.com/file/d/1JeZv1lcV2U1iQLOGjr-7nM6cOL7ro_tS/view?usp=sharing
+# https://drive.google.com/file/d/1GSN6_d7rzNPW0wv__z6i_MQgunlY7YDz/view?usp=drivesdk
 ~~~
-#ubuntu@suci:~ mkdir project_1
+#ubuntu@andin:~ mkdir project_1
 ~~~
 # Berikut contoh perintah berpindah direktori ke project_1 dan membuat folder documents images archives logs
 (Deskripsi gambar)
-# https://drive.google.com/file/d/19Px5AKsXT6CBcp9lNxev7VLi-EevxhLk/view?usp=sharing
+# https://drive.google.com/file/d/1B2kUsqnj6FrOREXq80KkZjHwjH-S7ghM/view?usp=drivesdk
 ~~~
 cd project_1
 ~~~
@@ -18,21 +18,21 @@ mkdir document images archives  logs
 ~~~
 # Berikut contoh perintah membuat 20 file sample:
 (Deskripsi gambar)
-# https://drive.google.com/file/d/1Njwoh8yoacDnYm7sNQ0WzWtCIY3Nr0pt/view?usp=sharing
+# https://drive.google.com/file/d/1g2uet7RJ2NCgBWcbpEo2KKDgLOblnqp1/view?usp=drivesdk
 ~~~
 touch file{1..10}.txt file{11..15}.jpg file{16..18}.pdf file(19..20}.log
 ~~~
 # Berikut contoh perintah memasukkan sebuah teks ke masing-masing file yang berbeda
 (Deskripsi gambar)
-# https://drive.google.com/file/d/1B_jXqUUEJRkn6Q5nufea9q9gCiIPkh5O/view?usp=sharing
+# https://drive.google.com/file/d/1MsCXB7d2VzE1Ac31lsjzluXvwr c5qUMB/view?usp=drivesdk
 ~~~
-echo "Contoh dokumen" > file1.txt
+echo "Contoh gambar dokumen" > file1.txt
 ~~~
 ~~~
 echo "Data gambar" >> file11.jpg
 ~~~
 ~~~
-echo "Log sistem contoh" >> file20.log
+echo "Log contoh" >> file20.log
 ~~~
 Penjelasan:
 - `mkdir` → membuat folder baru.
@@ -41,11 +41,11 @@ Penjelasan:
 # LANGKAH 2 SCRIPT OPERASI FILE
 # Buat script organisasi file di dalam direktori projek:
 ~~~
-nano operasi_file.sh
+nano sistem.sh
 ~~~
 # ISI SCRIPT
 (Deskripsi gambar)
-# https://drive.google.com/file/d/1y0blORhmEp0gPxiAibnEPNaTDE734QYg/view?usp=sharing
+# https://drive.google.com/file/d/10N69OuOA38ZLsL90bFK8GJrOBvUnV78I/view?usp=drivesdk
 ~~~
 #!/bin/bash
 # Script untuk mengorganisasi file berdasarkan ekstensi
@@ -65,10 +65,10 @@ ls documents images archives logs
 ~~~
 # Beri hak eksekusi:
 ~~~
-chmod +x operasi_file.sh
+chmod +x sistem.sh
 ~~~
 ~~~
-./operasi_file.sh
+./sistem.sh
 ~~~
 Penjelasan:
 - find.-maxdepth 1 -type f -name "*.ext" → mencari file berdasarkan ekstensi di direktori saat ini.
@@ -81,7 +81,7 @@ _Karena saya sudah punya script pencarian file yang bisa mencari berdasarkan nam
 nano search_file.sh
 ~~~
 (Deskripsi gambar)
-# https://drive.google.com/file/d/1krVZWSocRbHeokBRfgWb0-H_3Q9oRGUj/view?usp=sharing
+# https://drive.google.com/file/d/1XOxj9ot25tlv6y99GGgJBApEyTdWQdba/view?usp=drivesdk
 ~~~
 #!/bin/bash
 # Script: search_file.sh
@@ -128,7 +128,7 @@ Penjelasan:
 _Script ini akan membuat laporan statistik tentang file di direktori proyek, lalu menyimpannya ke report.txt._
 # Buat file report.sh
 (Deskripsi gambar)
-# https://drive.google.com/file/d/1lYowHdDH-SapyfJgHHtzgt2pp60wCHgW/view?usp=sharing
+# https://drive.google.com/file/d/19AHxap8hRVWtQ8L78QzbbWTrc_B9U6dj/view?usp=drivesdk
 ~~~
 #!/bin/bash
 # Script: generate_report.sh
